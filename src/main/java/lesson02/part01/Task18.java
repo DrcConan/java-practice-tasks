@@ -20,7 +20,14 @@ import java.util.*;
 
 public class Task18 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите имя: ");
+        String name = consoleReader.readLine();
+        System.out.println("Введите число1: ");
+        String num1 = consoleReader.readLine();
+        System.out.println("Введите число2: ");
+        String num2 = consoleReader.readLine();
+        System.out.println(name + " получает " + num1 + " через " + num2 + " лет.");
 
     }
 }

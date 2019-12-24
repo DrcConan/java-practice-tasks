@@ -1,5 +1,7 @@
 package lesson04.part01;
 
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -22,22 +24,29 @@ import java.util.Set;
 
 public class Task10 {
 
-  public static void main(String[] args) {
-    Set<Cat> cats = createCats();
+    public static void main(String[] args) {
+        Set<Cat> cats = createCats();
+        Iterator<Cat> it = cats.iterator();
+        if (it.hasNext()) {
+            cats.remove(it.next());
+        }
+        printCats(cats);
+    }
 
-    //напишите тут ваш код. step 2 - пункт 2
+    public static Set<Cat> createCats() {
+        Set<Cat> cats = new HashSet<Cat>();
+        for (int i = 0; i < 3; i++) {
+            cats.add(new Cat());
+        }
+        return cats;
+    }
 
-    printCats(cats);
-  }
+    public static void printCats(Set<Cat> cats) {
+        for (Cat cat : cats) {
+            System.out.println(cat);
+        }
+    }
 
-  public static Set<Cat> createCats() {
-    //напишите тут ваш код. step 1 - пункт 1
-    return null;
-  }
-
-  public static void printCats(Set<Cat> cats) {
-    // step 3 - пункт 3
-  }
-
-  public static class Cat {}
+    public static class Cat {
+    }
 }

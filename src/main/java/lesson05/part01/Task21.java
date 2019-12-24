@@ -27,10 +27,20 @@ public class Task21 {
         if (inputArray == null || inputArray.length == 0) {
             return new Pair<Integer, Integer>(null, null);
         }
+        int min=inputArray[0],max=inputArray[0];
+        for(int i=0;i<inputArray.length;i++){
 
+            if(inputArray[i]>max){
+                max=inputArray[i];
+            }
+            if(inputArray[i]<min){
+                min=inputArray[i];
+            }
+
+        }
         // напишите тут ваш код
 
-        return new Pair<Integer, Integer>(0, 0);
+        return new Pair<Integer, Integer>(min, max);
     }
 
     public static class Pair<X, Y> {

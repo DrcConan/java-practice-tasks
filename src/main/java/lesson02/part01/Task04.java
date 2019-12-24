@@ -16,6 +16,7 @@ package lesson02.part01;
 public class Task04 {
     public static double addTenPercent(int i) {
         //напишите тут ваш код
+        double 0d=i*1.1;
         return 0d;
     }
 

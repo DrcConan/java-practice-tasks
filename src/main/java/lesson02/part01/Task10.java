@@ -1,3 +1,4 @@
+  
 package lesson02.part01;
 
 /**
@@ -22,6 +23,7 @@ public class Task10 {
     }
 
     public static void writeToConsole(String s) {
+        System.out.println("printing: " + s);
         //напишите тут ваш код
 
     }

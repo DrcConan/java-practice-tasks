@@ -4,7 +4,7 @@ public class Task01 {
 
     /**
      * Hello World!
-     * Напиши программу, которая выводит на экран надпись:
+     * Напиши программу, которая выводит на экран надпись
      * Hello World!
      * Требования:
      * 1. Программа должна выводить текст.
@@ -15,6 +15,6 @@ public class Task01 {
      */
 
     public static void main(String[] args) {
-        // Напишите здесь ваш код
+        System.out.println("Hello World!");  // Напишите здесь ваш код
     }
 }

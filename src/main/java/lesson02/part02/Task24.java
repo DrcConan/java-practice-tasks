@@ -20,8 +20,22 @@ import java.io.*;
 import java.util.*;
 
 public class Task24 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
 
+  public static void main(String[] args) throws Exception {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Введите 1 число ");
+    int a = sc.nextInt();
+    System.out.println("Введите 2 число ");
+    int b = sc.nextInt();
+    System.out.println("Введите 3 число ");
+    int c = sc.nextInt();
+
+    if (a == b & a != c) {
+      System.out.println("3");
+    } else if (b == c && b != a) {
+      System.out.println("1");
+    } else if (a == c && a != b) {
+      System.out.println("2");
     }
+  }
 }

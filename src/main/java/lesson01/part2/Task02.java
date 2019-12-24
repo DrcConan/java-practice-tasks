@@ -23,6 +23,8 @@ public class Task02 {
     }
 
     public static void div(int a, int b) {
+        int s= a/b;
+        System.out.print(s);
         //напишите тут ваш код
 
     }

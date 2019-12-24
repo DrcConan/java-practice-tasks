@@ -23,6 +23,7 @@ public class Task03 {
     }
 
     public static void hackSalary(int a) {
+        System.out.println("Твоя зарплата составляет:"+ (a+100)+" долларов в месяц.");
         // напишите тут ваш код
     }
 }

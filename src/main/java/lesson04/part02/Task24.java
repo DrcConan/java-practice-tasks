@@ -17,12 +17,29 @@ import java.util.Map;
 public class Task24 {
 
   public static Map<String, Integer> createMap() {
-    //напишите тут ваш код
-    return null;
+    Map<String, Integer> map = new HashMap<>();
+    map.put("Max",600);
+    map.put("Misha",400);
+    map.put("Egor",500);
+    map.put("Sergey",100);
+    map.put("Marat",50);
+    map.put("Nikita",750);
+    map.put("Kostya",850);
+    map.put("Andrey",1040);
+    map.put("Tom",40);
+    map.put("Hank",780);
+    return map;
   }
 
   public static void removeItemFromMap(Map<String, Integer> map) {
-    //напишите тут ваш код
+    Iterator<Map.Entry<String, Integer>> iterator = map.entrySet().iterator();
+    while (iterator.hasNext()){
+      Map.Entry<String, Integer> pair = iterator.next();
+      String key = pair.getKey();
+      int value = pair.getValue();
+      if (value < 500)
+        iterator.remove();
+    }
   }
 
   public static void main(String[] args) {

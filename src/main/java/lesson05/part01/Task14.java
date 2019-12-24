@@ -13,7 +13,6 @@ package lesson05.part01;
  * 4. Класс Christianity должен быть унаследован от класса Judaism.
  * 5. Класс Islam должен быть унаследован от класса Christianity.
  */
-
 public class Task14 {
     public static void main(String[] args) {
     }
@@ -22,11 +21,11 @@ public class Task14 {
 
     }
 
-    public class Christianity {
+    public class Christianity extends Judaism{
 
     }
 
-    public class Islam {
+    public class Islam extends Christianity {
 
     }
 
